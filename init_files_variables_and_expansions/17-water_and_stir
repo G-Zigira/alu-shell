@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( "ibase=${#WATER};$WATER" + "ibase=${#STIR};$STIR" )) | bc | tr '0123456789ABCDEF' "$BESTCHOL"
+echo $(( $(echo "$WATER" | tr "$WATER" 01234) + $(echo "$STIR" | tr "$STIR" 0123) )) | tr 0123456789 "$BESTCHOL"
