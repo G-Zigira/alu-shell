@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#this is a shell script that uses loops to emulate a clock
+
+hr=0
+while (( hr<=12 )); do
+echo "Hour: $hr"
+min=1
+while (( min<=59 )); do
+echo "$min"
+((min++))
+done
+((hr++))
+done
