@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# this bash script uses awk to group visitores by ip and HTTP
+
+
+awk '{dig[$1" "$9]++} END {for (key in dig) printf "%7d %s\n", dig[key], key}' apache-access.log | sort -nr
