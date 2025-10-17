@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# this is a script that uses the switch case
+
+dig=1
+while (( dig <= 20 )); do
+echo "$dig"
+case $dig in
+ 4)
+  echo "bad luck from China"
+;;
+ 9)
+echo "bad luck from Japan"
+ ;;
+ 17)
+echo "bad luck from Italy"
+ ;;
+esac
+((dig++))
+done
