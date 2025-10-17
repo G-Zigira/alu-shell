@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# this script uses the for loop to print out fizzbuzz whhen the number is a mutiple of 3 and 5, print fizz for multiples of 3 and buz for multiples of 5 else it just prints regular numbers
+
+for ((p=1; p<=100; p++)); do
+if (( p % 3 == 0 && p % 5 == 0 )); then
+echo "FizzBuzz"
+elif (( p % 3 == 0 )); then
+echo "Fizz"
+elif (( p % 5 == 0 )); then
+echo "Buzz"
+else
+echo "$p"
+ fi
+done
