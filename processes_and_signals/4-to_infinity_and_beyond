@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# this script prints the statement "To infinity and beyond" indefinitely with a sleep 2 between each repetition.
+
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
+
+
