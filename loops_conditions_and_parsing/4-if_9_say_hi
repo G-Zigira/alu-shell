@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #this is the required while loop
 i=1
 
