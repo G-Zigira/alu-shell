@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#this is a sscript that prints to infintiy and beyond with sleep 2 in between each repetition and i am invincible whn receiving a sigterm signal
+
+
+trap "echo 'I am invincible!!!'" SIGTERM
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
+
+
