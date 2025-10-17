@@ -2,7 +2,7 @@
 #this script prints best school until the 4th and 8th iteration
 
 dig=1
-while(( counter<=10 )); do
+while(( dig<=10 )); do
 if(( dig==4 )); then
 echo "bad luck"
 elif(( dig==8 )); then
