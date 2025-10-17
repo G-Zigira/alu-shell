@@ -1,0 +1,16 @@
+#!/usr/bin/env bash 
+#This script is used to display best school execpt on the 4rth and 8th iteration
+dig=1
+
+while [ $dig -le 10 ]
+do 
+
+if [ $dig -eq 4 ]; then
+echo "bad luck"
+elif [ $dig -eq 8 ]; then
+echo "good luck"
+else
+ echo "Best School"
+fi
+num=$((dig + 1)) 
+done 
